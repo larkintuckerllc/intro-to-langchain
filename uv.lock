@@ -294,6 +294,15 @@ wheels = [
 ]
 
 [[package]]
+name = "dataclasses"
+version = "0.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/59/e4/2f921edfdf1493bdc07b914cbea43bc334996df4841a34523baf73d1fb4f/dataclasses-0.6.tar.gz", hash = "sha256:6988bd2b895eef432d562370bb707d540f32f7360ab13da45340101bc2307d84", size = 36819, upload-time = "2018-05-18T11:09:17.974Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/26/2f/1095cdc2868052dd1e64520f7c0d5c8c550ad297e944e641dbf1ffbb9a5d/dataclasses-0.6-py3-none-any.whl", hash = "sha256:454a69d788c7fda44efd71e259be79577822f5e3f53f029a22d08004e951dc9f", size = 14757, upload-time = "2018-05-18T11:09:16.763Z" },
+]
+
+[[package]]
 name = "distro"
 version = "1.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -435,6 +444,7 @@ name = "intro-to-langchain"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "dataclasses" },
     { name = "langchain" },
     { name = "langchain-mcp-adapters" },
     { name = "langchain-openai" },
@@ -444,6 +454,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "dataclasses", specifier = "==0.6" },
     { name = "langchain", specifier = "==1.2.0" },
     { name = "langchain-mcp-adapters", specifier = "==0.2.1" },
     { name = "langchain-openai", specifier = "==1.1.6" },
